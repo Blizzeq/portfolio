@@ -6,6 +6,7 @@ import right from "../assets/img/chevron_right.svg";
 import ellipse from "../assets/img/Ellipse.svg";
 import ellipseactive from "../assets/img/Ellipse-Active.svg";
 import open from "../assets/img/open_in_new.svg";
+import github from "../assets/img/GitHub.svg";
 
 function Projects(props) {
     return (
@@ -103,6 +104,14 @@ function Projects(props) {
                         <li>Jira</li>
                     </ul>
                 </div>
+            </div>
+            <div className={'Projects-technologies-button'}>
+                <a href={'#'}>
+                    <button className={'button-technologies'}>
+                        <img src={github} alt={'github'}/>
+                        <p>Check other repositories</p>
+                    </button>
+                </a>
             </div>
         </div>
     );
