@@ -329,6 +329,7 @@ body {
 .Technologies-name{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 5px;
     font-family: "Inter Semi Bold", serif;
     font-size: 28px;
