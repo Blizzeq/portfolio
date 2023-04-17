@@ -233,7 +233,7 @@ body {
     padding-inline: 150px;
     padding-block: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 50px;
     background-image: url("./assets/img/project-shadow.svg");
     background-size: cover;
@@ -241,7 +241,7 @@ body {
 }
 
 .Projects-container-text{
-    width: 50%;
+    width: 40%;
 }
 
 .Projects-status{
