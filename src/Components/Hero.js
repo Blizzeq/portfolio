@@ -11,26 +11,30 @@ import doublearrow from "../assets/img/keyboard_double_arrow_down.svg";
 function Hero(props) {
     return (
         <div className={'hero'}>
-            <div className={'hero-img-left'}>
-                <img src={heroleft} alt={'background'}/>
-                <img src={herolefts} alt={'background'} className={'hero-img-left-s'}/>
-            </div>
-            <div className={'hero-text'}>
-                <p className={'sugarpunch font-32'}>HI , I'M</p>
-                <p className={'sugarpunch font-128'} style={{marginTop : '25px'}}>JAKUB KRASUSKI</p>
-                <p className={'roboto-serif font-32'} style={{marginTop : '25px'}}>Frontend developer and IT student</p>
-                <button className={'Inter-SemiBold font-18 button-hero'} style={{marginTop : '25px'}}>Contact</button>
-                <div className={'socials'}>
-                    <a href={'mailto:kj.krasuski.mail@gmail.com'}><img src={mail} alt={'mail'}/></a>
-                    <a href={'tel:+48603524300'}><img src={whatsapp} alt={'whatsapp'}/></a>
+            <div className={'hero-container'}>
+                <div className={'hero-img-left'}>
+                    <img src={heroleft} alt={'background'}/>
+                    <img src={herolefts} alt={'background'} className={'hero-img-left-s'}/>
                 </div>
-                <a href={'#'}>
-                <img src={mouse} alt={'down'} className={'mouse'}/>
-                <img src={doublearrow} alt={'down'} className={'arrow'}/>
-                </a>
-            </div>
-            <div className={'hero-img-right'}>
-                <img src={heroright} alt={'background'}/>
+                <div className={'hero-text'}>
+                    <p className={'sugarpunch font-32'}>HI , I'M</p>
+                    <p className={'sugarpunch font-128'} style={{marginTop : '25px'}}>JAKUB KRASUSKI</p>
+                    <p className={'roboto-serif font-32'} style={{marginTop : '25px'}}>Frontend developer and IT student</p>
+                    <button className={'Inter-SemiBold font-18 button-hero'} style={{marginTop : '25px'}}>Contact</button>
+                    <div className={'socials'}>
+                        <a href={'mailto:kj.krasuski.mail@gmail.com'}><img src={mail} alt={'mail'}/></a>
+                        <a href={'tel:+48603524300'}><img src={whatsapp} alt={'whatsapp'}/></a>
+                    </div>
+                    <a href={'#'} className={'mouse'}>
+                        <img src={mouse} alt={'down'}/>
+                    </a>
+                    <a href={'#'} className={'arrow'}>
+                        <img src={doublearrow} alt={'down'}/>
+                    </a>
+                </div>
+                <div className={'hero-img-right'}>
+                    <img src={heroright} alt={'background'}/>
+                </div>
             </div>
         </div>
     );
