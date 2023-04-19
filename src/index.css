@@ -40,11 +40,37 @@ body {
     font-size: 32px;
 }
 
+.font-36{
+    font-size: 36px;
+}
+
+.font-24{
+    font-size: 24px;
+}
+
 .font-128{
     font-size: 84px;
 }
 
+.font-28{
+    font-size: 28px;
+}
 
+.font-22{
+    font-size: 22px;
+}
+
+.font-225{
+    font-size: 225px;
+}
+
+.Roboto-Slab{
+    font-family: "Roboto Slab", serif;
+}
+
+.text-gray-tech{
+    color: rgba(255, 255, 255, 0.55);
+}
 
 .roboto-serif{
     font-family: "Roboto Serif", serif;
@@ -207,7 +233,7 @@ body {
 }
 
 .Projects{
-    padding-top: 100px;
+    padding-top: 175px;
     background-color: black;
     width: 100%;
 }
@@ -386,4 +412,87 @@ body {
 .button-technologies:hover{
     transition: 0.3s;
     background-color: #a8a8a8;
+}
+
+.tech{
+    padding-top: 175px;
+    background-color: black;
+    color: #fff;
+}
+
+.tech p{
+    margin: 0;
+    padding: 0;
+}
+
+.tech-container{
+    display:flex;
+    justify-content: space-between;
+    padding-inline: 150px;
+}
+
+.tech-text{
+    width: 50%;
+    z-index: 2;
+}
+
+.tech-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech-image-container{
+    padding-right: 150px;
+    background-image: url("./assets/img/tech-logo.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 720px;
+    width: 440px;
+    z-index: 1;
+}
+
+.tech-title{
+    display:flex;
+    flex-direction: column;
+    text-align: start;
+    line-height: 1.2;
+    width: 70%;
+}
+
+.tech-web-list{
+    margin-top: 95px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.tech-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 50px;
+    margin-bottom: 20px;
+    width: max-content;
+}
+
+.tech-web-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 50px;
+    margin-bottom: 35px;
+}
+
+.tech-web-item-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mysql{
+    height: 100px;
+    width: 130px;
 }
