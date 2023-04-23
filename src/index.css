@@ -26,6 +26,7 @@
 body {
     margin: 0;
     scroll-behavior: smooth;
+    width: 100%;
 }
 
 /**{*/
@@ -37,31 +38,31 @@ body {
 }
 
 .font-32{
-    font-size: 32px;
+    font-size: 1.5vmax;
 }
 
 .font-36{
-    font-size: 36px;
+    font-size: 1.7vmax;
 }
 
 .font-24{
-    font-size: 24px;
+    font-size: 1vmax;
 }
 
 .font-128{
-    font-size: 84px;
+    font-size: 4.5vmax;
 }
 
 .font-28{
-    font-size: 28px;
+    font-size: 1.2vmax;
 }
 
 .font-22{
-    font-size: 22px;
+    font-size: .9vmax;
 }
 
 .font-225{
-    font-size: 225px;
+    font-size: 12vmax;
 }
 
 .Roboto-Slab{
@@ -87,7 +88,7 @@ body {
 .header {
     display: flex;
     background-color: #000;
-    height: 135px;
+    height: 15vh;
     width: 100%;
     justify-content: space-between;
     top: 0;
@@ -114,7 +115,7 @@ body {
     color: #fff;
     text-decoration: none;
     font-family: "Roboto Serif", serif;
-    font-size: 22px;
+    font-size: 1.2vw;
 }
 
 .header-text a:hover {
@@ -171,7 +172,7 @@ body {
 }
 
 .hero-text{
-    width: 450px;
+    width: 25%;
     margin-top: 15vh;
 }
 
@@ -182,9 +183,9 @@ body {
 
 .button-hero{
     font-family: "Inter Semi Bold", serif;
-    font-size: 18px;
-    padding: 15px 50px;
-    border-radius: 10px;
+    font-size: 1.1vmax;
+    padding: .8vmax 3.6vmax;
+    border-radius: .6vmax;
     border: none;
 }
 
@@ -201,10 +202,18 @@ body {
     margin-top: 20px;
 }
 
+.socials img{
+    width: 2vmax;
+}
+
 .mouse{
     display: flex;
     justify-content: center;
     margin-top: 80px;
+}
+
+.mouse img{
+    width: 2.5vmax;
 }
 
 .arrow{
@@ -214,6 +223,9 @@ body {
     animation: arrow-move 2s infinite;
 }
 
+.arrow img{
+    width: 2vmax;
+}
 
 @keyframes arrow-move {
     0% {
@@ -242,25 +254,25 @@ body {
     display:flex;
     justify-content:center;
     font-family: "Roboto Slab", serif;
-    font-size: 48px;
+    font-size: 2.2vw;
     color: #fff;
 }
 
 .Projects hr {
     margin-top: 10px;
-    width: 220px;
+    width: 15%;
     background-color: #fff;
     height: 2px;
 }
 
 .Projects-container{
     color: #fff;
-    margin-top: 25px;
-    padding-inline: 150px;
-    padding-block: 50px;
+    margin-top: 1.2vmax;
+    padding-inline: 5%;
+    padding-block: 2.5%;
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 2.5vmax;
     background-image: url("./assets/img/project-shadow.svg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -272,26 +284,30 @@ body {
 
 .Projects-status{
     display: flex;
-    gap: 10px;
+    gap: .5vmax;
     font-family: "Inter Semi Bold", serif;
 }
 
 .Projects-name{
     display: flex;
     font-family: "Roboto Slab", serif;
-    font-size: 175px;
+    font-size: 8vw;
 }
 
 .Projects-description{
     text-align: left;
     font-family: "Roboto Slab", serif;
-    font-size: 32px;
+    font-size: 1.6vw;
     width: 80%;
 }
 
 .Projects-image{
     display: flex;
     overflow: hidden;
+}
+
+.Projects-image img{
+    width: 100%;
 }
 
 .Projects-button{
@@ -304,7 +320,8 @@ body {
     background-color: #346259;
     color: #fff;
     border: none;
-    padding: 15px 50px;
+    font-size: 1vmax;
+    padding: .8vmax 2.5vmax;
     border-radius: 10px;
 }
 
@@ -318,8 +335,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    margin-top: 25px;
+    gap: .5vmax;
+    margin-top: 1vmax;
+}
+
+.Projects-menu-controller img{
+    width: 1vmax;
+}
+
+.menu-controller-left img{
+    width: 2vmax;
+}
+
+.menu-controller-right img{
+    width: 2vmax;
 }
 
 .active-project svg ellipse{
@@ -342,25 +371,25 @@ body {
     display: flex;
     justify-content: center;
     font-family: "Inter Semi Bold", serif;
-    font-size: 24px;
-    margin-top: 50px;
+    font-size: 1.5vw;
+    margin-top: 2vmax;
     color: #fff;
 }
 
 .Projects-technologies-container{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 50px;
-    padding-inline: 150px;
+    margin-top: 2vmax;
+    padding-inline: 5%;
 }
 
 .Technologies-name{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: .2vmax;
     font-family: "Inter Semi Bold", serif;
-    font-size: 28px;
+    font-size: 1.3vw;
     color: #fff;
 }
 
@@ -373,21 +402,21 @@ body {
 .Projects-technologies-back li,
 .Projects-technologies-pm li {
     font-family: "Roboto Serif", serif;
-    font-size: 24px;
+    font-size: 1.2vw;
     color: #fff;
 }
 
 .Projects-technologies-front ul,
 .Projects-technologies-back ul,
 .Projects-technologies-pm ul {
-    margin-top: 30px;
+    margin-top: 1.5vmax;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: .8vmax;
 }
 
 .Projects-technologies-button{
-    margin-top: 120px;
+    margin-top: 7vmax;
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -401,11 +430,11 @@ body {
     display: flex;
     align-items: center;
     font-family: "Inter Semi Bold", serif;
-    font-size: 24px;
+    font-size: 1.2vw;
     border: none;
     border-radius: 10px;
-    gap: 25px;
-    padding: 15px 35px;
+    gap: 1vmax;
+    padding: 1vmax 2vmax;
     cursor: pointer;
 }
 
@@ -415,9 +444,10 @@ body {
 }
 
 .tech{
-    padding-top: 175px;
+    padding-top: 8vmax;
     background-color: black;
     color: #fff;
+    padding-inline:3%;
 }
 
 .tech p{
@@ -428,29 +458,20 @@ body {
 .tech-container{
     display:flex;
     justify-content: space-between;
-    padding-inline: 150px;
+    padding-inline: 5%;
 }
 
 .tech-text{
-    width: 50%;
-    z-index: 2;
+    width: 70%;
 }
 
 .tech-image{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
 }
 
-.tech-image-container{
-    padding-right: 150px;
-    background-image: url("./assets/img/tech-logo.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 720px;
-    width: 440px;
-    z-index: 1;
+.tech-image img{
+    padding-top: 50%;
+    width: 95%;
 }
 
 .tech-title{
@@ -462,7 +483,7 @@ body {
 }
 
 .tech-web-list{
-    margin-top: 95px;
+    margin-top: 5vmax;
     display: flex;
     flex-direction: column;
     text-align: start;
@@ -472,8 +493,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline: 50px;
-    margin-bottom: 20px;
+    padding-inline: 2vmax;
+    margin-bottom: .9vmax;
     width: max-content;
 }
 
@@ -481,18 +502,29 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline: 50px;
-    margin-bottom: 35px;
+    padding-inline: 2.5vmax;
+    margin-bottom: 1.8vmax;
+}
+
+.tech-tag-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 3vmax;
+    margin-bottom: 1.8vmax;
+}
+
+.tech-web-item img{
+    height: 4vmax;
 }
 
 .tech-web-item-text{
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: .5vmax;
 }
 
 .mysql{
-    height: 100px;
-    width: 130px;
+    height: 4vmax;
 }

@@ -12,6 +12,7 @@ import react from '../assets/img/react.svg';
 import tailwind from '../assets/img/tailwind.svg';
 import mysql from '../assets/img/mysql-logo-black-and-white.png';
 import tagdatabases from '../assets/img/Tag-Data.svg';
+import techimage from '../assets/img/tech-logo.svg';
 
 
 function Tech(props) {
@@ -26,7 +27,7 @@ function Tech(props) {
                             here they are:</p>
                     </div>
                     <div className={'tech-web-list'}>
-                        <div className={'tech-web-item'}>
+                        <div className={'tech-tag-item'}>
                             <img src={tagweb} alt={'tagweb'}/>
                         </div>
                         <div className={'tech-line'}>
@@ -61,7 +62,7 @@ function Tech(props) {
                                 </div>
                             </div>
                         </div>
-                        <div className={'tech-web-item'}>
+                        <div className={'tech-tag-item'}>
                             <img src={tagframeworks} alt={'tagframeworks'}/>
                         </div>
                         <div className={'tech-line'}>
@@ -80,7 +81,7 @@ function Tech(props) {
                                 </div>
                             </div>
                         </div>
-                        <div className={'tech-web-item'}>
+                        <div className={'tech-tag-item'}>
                             <img src={taglibraries} alt={'taglib'}/>
                         </div>
                         <div className={'tech-line'}>
@@ -99,7 +100,7 @@ function Tech(props) {
                                 </div>
                             </div>
                         </div>
-                        <div className={'tech-web-item'}>
+                        <div className={'tech-tag-item'}>
                             <img src={tagdatabases} alt={'taglib'}/>
                         </div>
                         <div className={'tech-line'}>
@@ -115,8 +116,7 @@ function Tech(props) {
                     </div>
                 </div>
                 <div className={'tech-image'}>
-                    <div className={'tech-image-container'}>
-                    </div>
+                    <img src={techimage} alt={'tech-image'}/>
                 </div>
             </div>
         </div>
