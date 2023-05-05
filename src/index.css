@@ -549,3 +549,122 @@ body {
 .mysql{
     height: 4vmax;
 }
+
+.ending{
+    display: flex;
+    justify-content: center;
+    padding-inline: 5%;
+    background-color: black;
+    position: relative;
+}
+
+.ending-container{
+    display: flex;
+    flex-direction: column;
+    color:white;
+    width: 100%;
+    padding-top: 5vmax;
+    padding-bottom: 5vmax;
+}
+
+.ending-text{
+    display: flex;
+    justify-content: flex-start;
+    text-align: start;
+    font-family: 'SugarPunch', sans-serif;
+    font-size: 4vmax;
+    line-height: 1.4;
+    z-index: 2;
+}
+
+.ending-text p{
+    width: 50%;
+}
+
+.ending-input{
+    display:flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.ending-input input{
+    width: 50%;
+    border-radius: 50px;
+    border: none;
+    height: 2.5vmax;
+    padding-inline: 1vmax;
+    font-family: 'Roboto Serif', serif;
+    font-size: 1vmax;
+}
+
+.ending-input input:focus{
+    outline: none;
+}
+
+.ending-button{
+    position: absolute;
+    right: 48%;
+    top: .2vmax;
+    font-family: 'Roboto Serif', serif;
+    font-size: 1vmax;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: .5vmax 2vmax;
+}
+
+.ending-image-1 {
+    position: absolute;
+    right: 0;
+    top: -5vmax;
+    width: 25%;
+    z-index: 1;
+}
+
+
+.ending-image-1 img{
+    width: 100%;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #040305;
+    width: 100%;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding-inline: 5%;
+    padding-top: 2vmax;
+    padding-bottom: 2vmax;
+    align-items: center;
+}
+
+.footer-text{
+    font-family: 'SugarPunch', sans-serif;
+    color: white;
+    font-size: 1.2vmax;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-family: 'Inter Semi Bold', sans-serif;
+    font-size: 1vmax;
+    padding: .5vmax 1.5vmax;
+    border-radius: 10px;
+}
+
+.footer-text-2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: .8vmax;
+    padding-bottom: 2vmax;
+}
