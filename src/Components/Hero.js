@@ -36,6 +36,13 @@ function Hero(props) {
                     <img src={heroright} alt={'background'}/>
                 </div>
             </div>
+            <div className={'hero-img-right-s'}>
+                <img src={heroright} alt={'background'}/>
+            </div>
+            <div className={'hero-img-left-ss'}>
+                <img src={heroleft} alt={'background'}/>
+                <img src={herolefts} alt={'background'} className={'hero-img-left-s'}/>
+            </div>
         </div>
     );
 }
