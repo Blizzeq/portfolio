@@ -7,8 +7,64 @@ import ellipse from "../assets/img/Ellipse.svg";
 import ellipseactive from "../assets/img/Ellipse-Active.svg";
 import open from "../assets/img/open_in_new.svg";
 import github from "../assets/img/GitHub.svg";
+import projectone from "../assets/img/projectone-img.png";
+import firebase from "../assets/img/firebase-budget.png";
+import sharex from "../assets/img/share-x.png";
+import currency from "../assets/img/currency-converter.png";
+import apple3d from "../assets/img/apple-3d.png";
 
 function Projects(props) {
+
+    const projects = [
+        {
+            projectone: [
+                {
+                    name: 'Project One',
+                    description: 'This project is a website that provides a description and interactive 3D model of the Mercedes AMG Project One car.',
+                    image: 'projectone'
+                }
+            ],
+        },
+        {
+            firebase: [
+                {
+                    name: 'Firebase Budget',
+                    description: 'This project is a website that allows you to manage your budget.',
+                    image: 'firebase'
+                }
+            ],
+        },
+        {
+            sharex: [
+                {
+                    name: 'ShareX',
+                    description: 'This project is a website that allows you to share your files.',
+                    image: 'sharex'
+                }
+            ],
+        },
+        {
+            currency: [
+                {
+                    name: 'Currency Converter',
+                    description: 'This project is a website that allows you to convert currencies.',
+                    image: 'currency'
+                }
+            ],
+        },
+        {
+            apple3d: [
+                {
+                    name: 'Apple 3D',
+                    description: 'This project is a copy of Apple\'s homepage incorporating fully functional 3D animation. It was built using React, ThreeJS(WebGL) and GSAP.',
+                    image: 'apple3d'
+                }
+            ],
+        }
+    ];
+
+
+
     return (
         <div className={'Projects'}>
             <div className={'Projects-title'}>

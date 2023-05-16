@@ -321,10 +321,12 @@ body {
 .Projects-image{
     display: flex;
     overflow: hidden;
+    max-width: 60%;
 }
 
 .Projects-image img{
     width: 100%;
+    border-radius: 10px;
 }
 
 .Projects-button{
