@@ -575,6 +575,15 @@ body {
     height: 4vmax;
 }
 
+.ending-input-error{
+    color: #dc2323;
+    font-family: "Inter Semi Bold", serif;
+    font-size: .8vw;
+    display: flex;
+    justify-content: flex-start;
+    margin: .4vmax 0 .4vmax .4vmax;
+}
+
 .ending{
     display: flex;
     justify-content: center;
@@ -608,12 +617,13 @@ body {
 
 .ending-input{
     display:flex;
+    flex-direction: column;
     justify-content: flex-start;
     position: relative;
 }
 
 .ending-input input{
-    width: 50%;
+    width: 36%;
     border-radius: 50px;
     border: none;
     height: 2.5vmax;
@@ -626,10 +636,24 @@ body {
     outline: none;
 }
 
+.ending-input textarea{
+    width: 36%;
+    border-radius: 50px;
+    border: none;
+    font-family: 'Roboto Serif', serif;
+    font-size: 1vmax;
+    resize: vertical;
+    margin-top: 1vmax;
+    padding: 1vmax;
+    outline: none;
+    overflow-y: hidden;
+}
+
 .ending-button{
     position: absolute;
-    right: 48%;
-    top: .2vmax;
+    right: 61.8%;
+    top: .07vmax;
+    height: 2.5vmax;
     font-family: 'Roboto Serif', serif;
     font-size: 1vmax;
     background-color: black;
@@ -637,6 +661,7 @@ body {
     border: none;
     border-radius: 50px;
     padding: .5vmax 2vmax;
+    cursor: pointer;
 }
 
 
@@ -701,6 +726,59 @@ body {
     font-family: 'Roboto Slab', serif;
     font-size: .8vmax;
     padding-bottom: 2vmax;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-dialog {
+    background-color: #fff;
+    width: 400px;
+    padding: 20px;
+    border-radius: 4px;
+    margin-inline: 5%;
+}
+
+.modal-title {
+    font-family: "Inter Semi Bold", serif;
+    font-size: 1.5vmax;
+}
+
+.modal-content {
+    padding-inline: 5%;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-footer button {
+    font-family: "Inter Semi Bold", serif;
+    font-size: 1vmax;
+    padding: .5vmax 1.5vmax;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #040305;
+    color: white;
+    border: 1px solid white;
+}
+
+.modal-footer button:hover {
+    transition: .3s;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
 }
 
 
@@ -916,21 +994,31 @@ body {
         width: 100%;
     }
 
-    .ending-input{
-        justify-content: center;
+    .ending-container > .ending-input{
+        display: flex;
         width: 100%;
+        align-items: center;
     }
 
     .ending-input input{
-        font-size: 1.5vmax;
-        width: 100%;
-        height: 4vmax;
+        width: 80%;
+        height: 2.8vmax;
+        display: flex;
+        position: relative;
+    }
+
+    .ending-input textarea{
+        width: 80%;
     }
 
     .ending-button{
-        right: 1%;
+        text-align: center;
+        top: .2vmax;
+        right: 9%;
+    }
+
+    .ending-input-error{
         font-size: 1.2vmax;
-        height: 3.8vmax;
     }
 
     .footer-text{
