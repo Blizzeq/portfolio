@@ -17,7 +17,7 @@ import techimage from '../assets/img/tech-logo.svg';
 
 function Tech(props) {
     return (
-        <div className={'tech'}>
+        <div className={'tech'} id={'tech'}>
             <div className={'tech-container'}>
                 <div className={'tech-text'}>
                     <div className={'tech-title Roboto-Slab'}>

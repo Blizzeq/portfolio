@@ -109,6 +109,7 @@ body {
     align-items: center;
     padding-right: 8vmax;
     gap: 3.5vmax;
+    cursor: pointer;
 }
 
 .header-text img{
@@ -692,6 +693,7 @@ body {
 @media screen and (max-width: 768px) {
     .header-text{
         display: none;
+        padding-bottom: 3vmax;
     }
 
     .header-text.open {

@@ -3,7 +3,7 @@ import image1 from '../assets/img/ending-image-1.svg';
 
 function Ending(props) {
     return (
-        <div className={'ending'}>
+        <div className={'ending'} id={'contact-link'}>
             <div className={'ending-container'}>
                 <div className={'ending-text'}>
                     <p>WANT TO HAVE AN AWESOME PROJECT DONE?</p>
