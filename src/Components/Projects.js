@@ -1,6 +1,5 @@
-import React from 'react';
+import React, {useState} from 'react';
 import finished from "../assets/img/finished.svg";
-import landingpage from "../assets/img/Landing-page.svg";
 import left from "../assets/img/chevron_left.svg";
 import right from "../assets/img/chevron_right.svg";
 import ellipse from "../assets/img/Ellipse.svg";
@@ -12,56 +11,66 @@ import firebase from "../assets/img/firebase-budget.png";
 import sharex from "../assets/img/share-x.png";
 import currency from "../assets/img/currency-converter.png";
 import apple3d from "../assets/img/apple-3d.png";
+import pending from "../assets/img/pending.svg";
 
 function Projects(props) {
 
     const projects = [
         {
-            projectone: [
-                {
-                    name: 'Project One',
-                    description: 'This project is a website that provides a description and interactive 3D model of the Mercedes AMG Project One car.',
-                    image: 'projectone'
-                }
-            ],
+            name: 'Project One',
+            description: 'This project is a website that provides a description and interactive 3D model of the Mercedes AMG Project One car.',
+            image: projectone,
+            status: 'finished'
         },
         {
-            firebase: [
-                {
-                    name: 'Firebase Budget',
-                    description: 'This project is a website that allows you to manage your budget.',
-                    image: 'firebase'
-                }
-            ],
+            name: 'Firebase Budget',
+            description: 'This project is a website that allows you to manage your budget.',
+            image: firebase,
+            status: 'finished',
         },
         {
-            sharex: [
-                {
-                    name: 'ShareX',
-                    description: 'This project is a website that allows you to share your files.',
-                    image: 'sharex'
-                }
-            ],
+            name: 'ShareX',
+            description: 'This project is a website that allows you to share your files.',
+            image: sharex,
+            status: 'pending'
         },
         {
-            currency: [
-                {
-                    name: 'Currency Converter',
-                    description: 'This project is a website that allows you to convert currencies.',
-                    image: 'currency'
-                }
-            ],
+            name: 'Currency Converter',
+            description: 'This project is a website that allows you to convert currencies.',
+            image: currency,
+            status: 'pending'
         },
         {
-            apple3d: [
-                {
-                    name: 'Apple 3D',
-                    description: 'This project is a copy of Apple\'s homepage incorporating fully functional 3D animation. It was built using React, ThreeJS(WebGL) and GSAP.',
-                    image: 'apple3d'
-                }
-            ],
+            name: 'Apple 3D',
+            description: 'This project is a copy of Apple\'s homepage incorporating fully functional 3D animation. It was built using React, ThreeJS(WebGL) and GSAP.',
+            image: apple3d,
+            status: 'finished'
         }
     ];
+
+    const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
+
+    const navigateToPreviousProject = () => {
+        setCurrentProjectIndex((prevIndex) => {
+            if (prevIndex === 0) {
+                return projects.length - 1;
+            } else {
+                return prevIndex - 1;
+            }
+        });
+    };
+
+    const navigateToNextProject = () => {
+        setCurrentProjectIndex((prevIndex) => {
+            if (prevIndex === projects.length - 1) {
+                return 0;
+            } else {
+                return prevIndex + 1;
+            }
+        });
+    };
+
+    const currentProject = projects[currentProjectIndex];
 
 
 
@@ -74,38 +83,50 @@ function Projects(props) {
             <div className={'Projects-container'}>
                 <div className={'Projects-container-text'}>
                     <div className={'Projects-status'}>
-                        <img src={finished} alt={'finished'}/>
-                        <p>|</p>
-                        <p>Finished</p>
+                        {currentProject.status === 'finished' ? (
+                            <>
+                                <img src={finished} alt={'finished'} />
+                                <p>|</p>
+                                <p>Finished</p>
+                            </>
+                        ) : (
+                            <>
+                                <img src={pending} alt={'pending'} />
+                                <p>|</p>
+                                <p>Pending</p>
+                            </>
+                        )}
                     </div>
                     <div className={'Projects-name'}>
-                        <p>DFL</p>
+                        <p>{currentProject.name}</p>
                     </div>
                     <div className={'Projects-description'}>
-                        <p>An application that will help you to report garbage
-                            outbreaks and find trash collection points in your city.</p>
+                        <p>{currentProject.description}</p>
                     </div>
                     <div className={'Projects-button'}>
                         <a href={'#'}>
-                            <button className={'button-projects'}>
-                                VISIT APP WEBSITE
-                            </button>
+                            <button className={'button-projects'}>VISIT APP WEBSITE</button>
                         </a>
                     </div>
                 </div>
                 <div className={'Projects-image'}>
-                    <img src={landingpage} alt={'landingpage'}/>
+                    <img src={currentProject.image} alt={'project'} />
                 </div>
             </div>
             <div className={'Projects-menu-controller'}>
-                <button className={'menu-controller-left'}>
-                    <img src={left} alt={'previous'}/>
+                <button className={'menu-controller-left'} onClick={navigateToPreviousProject}>
+                    <img src={left} alt={'previous'} />
                 </button>
-                <img src={ellipseactive} alt={'eclipse'}/>
-                <img src={ellipse} alt={'eclipse'}/>
-                <img src={ellipse} alt={'eclipse'}/>
-                <button className={'menu-controller-right'}>
-                    <img src={right} alt={'previous'}/>
+                {/* Render ellipse images based on the projects */}
+                {projects.map((project, index) => (
+                    <img
+                        key={index}
+                        src={index === currentProjectIndex ? ellipseactive : ellipse}
+                        alt={'eclipse'}
+                    />
+                ))}
+                <button className={'menu-controller-right'} onClick={navigateToNextProject}>
+                    <img src={right} alt={'previous'} />
                 </button>
             </div>
             <div className={'Projects-technologies-title'}>

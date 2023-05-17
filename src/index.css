@@ -289,6 +289,7 @@ body {
     padding-block: 2.5%;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 2.5vmax;
     background-image: url("./assets/img/project-shadow.svg");
     background-size: cover;
@@ -296,6 +297,9 @@ body {
 }
 
 .Projects-container-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 40%;
 }
 
@@ -308,13 +312,13 @@ body {
 .Projects-name{
     display: flex;
     font-family: "Roboto Slab", serif;
-    font-size: 8vw;
+    font-size: 3.2vw;
 }
 
 .Projects-description{
     text-align: left;
     font-family: "Roboto Slab", serif;
-    font-size: 1.6vw;
+    font-size: 1.8vw;
     width: 80%;
 }
 
@@ -331,7 +335,7 @@ body {
 
 .Projects-button{
     display: flex;
-    margin-top: 50px;
+    margin-top: 1vmax;
 }
 
 .button-projects{
@@ -924,5 +928,11 @@ body {
 
     .footer-text-2{
         font-size: 1.5vmax;
+    }
+
+    .button-projects{
+        font-size: .8vmax;
+        padding: .8vmax 2.5vmax;
+        border-radius: 10px;
     }
 }
