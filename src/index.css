@@ -140,7 +140,7 @@ body {
 
 #contact:hover {
     transition: 0.3s;
-    background-color: #a8a8a8;
+    background-color: #fdfdfd;
     color: #000;
     border: 1px solid #a8a8a8;
 }
@@ -634,6 +634,7 @@ body {
     padding: .5vmax 2vmax;
 }
 
+
 .ending-image-1 {
     position: absolute;
     right: 0;
@@ -678,6 +679,14 @@ body {
     font-size: 1vmax;
     padding: .5vmax 1.5vmax;
     border-radius: 10px;
+    border: 1px solid white;
+}
+
+.footer-links a:hover{
+    transition: .3s;
+    background-color: #040305;
+    color: white;
+    border: 1px solid white;
 }
 
 .footer-text-2{
