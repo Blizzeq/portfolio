@@ -1039,4 +1039,12 @@ body {
         padding: .8vmax 2.5vmax;
         border-radius: 10px;
     }
+
+    .Projects-status{
+        font-size: 1vmax;
+    }
+
+    .Projects-status img{
+        height: 1vmax;
+    }
 }
