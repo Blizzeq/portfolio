@@ -104,6 +104,10 @@ body {
     padding-left: 8vmax;
 }
 
+.logo p {
+    cursor: pointer;
+}
+
 .header-text {
     display: flex;
     align-items: center;
@@ -205,6 +209,7 @@ body {
     border-radius: .6vmax;
     border: none;
     color: black;
+    cursor: pointer;
 }
 
 .button-hero:hover{

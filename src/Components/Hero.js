@@ -24,9 +24,11 @@ function Hero(props) {
                     <p className="roboto-serif font-32" style={{marginTop: '25px'}}>
                         Frontend developer and IT student
                     </p>
-                    <button className="Inter-SemiBold font-18 button-hero" style={{marginTop: '25px'}}>
-                        Contact
-                    </button>
+                    <Link to="contact-link" smooth={true} duration={1200}>
+                        <button className="Inter-SemiBold font-18 button-hero" style={{marginTop: '25px'}}>
+                            Contact
+                        </button>
+                    </Link>
                     <div className="socials">
                         <a href="mailto:kj.krasuski.mail@gmail.com">
                             <img src={mail} alt="mail"/>

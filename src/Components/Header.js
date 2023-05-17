@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-scroll';
+import React, {useState} from 'react';
+import {Link} from 'react-scroll';
 import lightmode from "../assets/img/logo-light-mode.svg";
 import language from "../assets/img/logo-language.svg";
 import burger from "../assets/img/burger-icon.svg";
@@ -15,7 +15,9 @@ function Header(props) {
     return (
         <div className="header">
             <div className="logo">
-                <p className="sugarpunch font-32">&lt;&gt;Jakub Krasuski&lt;/&gt;</p>
+                <Link to="home" smooth={true} duration={1200}>
+                    <p className="sugarpunch font-32">&lt;&gt;Jakub Krasuski&lt;/&gt;</p>
+                </Link>
             </div>
             <div className={`header-text ${isMenuOpen ? 'open' : ''}`}>
                 <Link to="home" smooth={true} duration={1200}>Home</Link>
@@ -24,7 +26,7 @@ function Header(props) {
                 <Link to="contact-link" smooth={true} duration={1200} id={'contact'}>Contact</Link>
             </div>
             <div className="header-text-mobile">
-                <a onClick={handleBurgerClick}><img src={isMenuOpen ? close : burger} alt="burger" /></a>
+                <a onClick={handleBurgerClick}><img src={isMenuOpen ? close : burger} alt="burger"/></a>
             </div>
         </div>
     );
