@@ -623,7 +623,7 @@ body {
 }
 
 .ending-input input{
-    width: 36%;
+    width: 32%;
     border-radius: 50px;
     border: none;
     height: 2.5vmax;
@@ -637,7 +637,7 @@ body {
 }
 
 .ending-input textarea{
-    width: 36%;
+    width: 32%;
     border-radius: 50px;
     border: none;
     font-family: 'Roboto Serif', serif;
@@ -647,21 +647,23 @@ body {
     padding: 1vmax;
     outline: none;
     overflow-y: hidden;
+    height: 1vmax;
 }
 
 .ending-button{
-    position: absolute;
-    right: 61.8%;
-    top: .07vmax;
+    display: flex;
+    margin-top: 1vmax;
     height: 2.5vmax;
     font-family: 'Roboto Serif', serif;
     font-size: 1vmax;
     background-color: black;
     color: white;
-    border: none;
+    border: 1px solid white;
     border-radius: 50px;
     padding: .5vmax 2vmax;
     cursor: pointer;
+    width: max-content;
+    align-items: center;
 }
 
 
