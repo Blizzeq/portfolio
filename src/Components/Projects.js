@@ -168,7 +168,7 @@ function Projects(props) {
                 </div>
             </div>
             <div className="Projects-technologies-button">
-                <a href="#">
+                <a href="https://github.com/Blizzeq">
                     <button className="button-technologies">
                         <img src={github} alt="github" />
                         <p>Check other repositories</p>

@@ -467,6 +467,10 @@ body {
     cursor: pointer;
 }
 
+.button-technologies p{
+    color: black;
+}
+
 .button-technologies:hover{
     transition: 0.3s;
     background-color: #a8a8a8;
