@@ -1,1 +1,1 @@
-Demo: [krasuski-portfolio](jakubkrasuski.pl)
+Demo: [krasuski-portfolio](http://jakubkrasuski.pl)
