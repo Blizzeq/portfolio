@@ -1,1 +1,1 @@
-Demo: [krasuski-portfolio](https://krasuski-portfolio.netlify.app/)
+Demo: [krasuski-portfolio](jakubkrasuski.pl)
